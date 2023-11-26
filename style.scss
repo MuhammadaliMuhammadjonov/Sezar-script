@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(to left, #4E3167, #6f4a8f);
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    // background-color: rgba(255, 255, 255, 0.986);
+    position: relative;
+    padding: 20px;
+    // background-image: url('/image/back_to_work_4x.png');
+    // background-position: center;
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    form{
+        display: flex;
+        align-items: center;
+        
+    }
+    .btn{
+        width: 100px;
+        height: 50px;
+        border-radius: 10px;
+        border: none;
+        color: white;
+        background-color: rgb(33, 153, 9);
+        margin: 20px 0;
+        box-shadow: 1px 1px 15px black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:active{
+            transform: scale(1.2);
+            background-color: rgb(145, 151, 154);
+            color: white;
+        }
+    }
+    .btn2{
+        background-color: rgb(206, 81, 8);
+        box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.856);
+    }
+    .text{
+        width: 395px;
+        height: 300px;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        padding: 15px;
+        box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.76);
+        font-weight: bold;
+    }
+    
+}
+.num{
+    width: 300px;
+    height: 50px;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.box{
+    display: flex;
+    margin: 0 5px;
+    justify-content: space-between;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+.jv{
+    color: rgb(230, 33, 19);
+    font-weight: bold;
+}
+
+.name{
+    position: absolute;
+    left: 60px;
+    bottom: 60px;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@media (max-width:1308px) {
+    .container{
+        width: 80%;
+        padding: 50px 20px;
+
+        .input{
+            form{
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
+                textarea{
+                    width: 100%;
+                    height: 200px;
+                }
+            }
+           
+        }
+       
+    }
+}
+
+@media (max-width:358px) {
+    h1{
+        display: none;
+    }
+    body{
+        padding: 0;
+        width: 100%;
+        overflow: hidden;
+    }
+    .container{
+        width: 90% !important;
+        .input{
+            width: 100%;
+            form{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 100vh;
+                width: 100%;
+                textarea{
+                    width: 100%;
+                    height: 200px;
+                }
+                input{
+                    width: 100%;
+                }
+            }
+           
+        }
+       
+    }
+}
+
